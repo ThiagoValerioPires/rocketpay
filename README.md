@@ -18,13 +18,14 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
 
-to start interactive mode
+to start interactive mode:
 iex -S mix
 
-to start the phoenix server
+to start the phoenix server:
 mix phx.server
 
-to create a new migration file
+to create a new migration file:
 mix ecto.gen.migration create_accounts_table
 
-
+to preload account:
+Rocketpay.Repo.all(Rocketpay.User) |> Rocketpay.Repo.preload(:account)
