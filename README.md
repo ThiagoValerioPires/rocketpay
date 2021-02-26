@@ -32,3 +32,11 @@ Rocketpay.Repo.all(Rocketpay.User) |> Rocketpay.Repo.preload(:account)
 
 to download dependencies:
 mix deps get
+
+to run tests:
+mix test
+mix test --cover
+mix coveralls.html
+
+how to encode Basic Authentication username and password, using iex
+Base.encode64("usename:passwrd")

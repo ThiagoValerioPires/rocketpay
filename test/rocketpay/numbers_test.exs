@@ -1,5 +1,5 @@
 defmodule Rocketpay.NumbersTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   alias Rocketpay.Numbers
 
@@ -19,5 +19,6 @@ defmodule Rocketpay.NumbersTest do
 
       assert response == expected_response
     end
+    
   end
 end
