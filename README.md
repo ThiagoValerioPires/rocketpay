@@ -29,3 +29,6 @@ mix ecto.gen.migration create_accounts_table
 
 to preload account:
 Rocketpay.Repo.all(Rocketpay.User) |> Rocketpay.Repo.preload(:account)
+
+to download dependencies:
+mix deps get
